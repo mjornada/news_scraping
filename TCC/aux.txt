@@ -1,0 +1,17 @@
+https://huggingface.co/models?pipeline_tag=text-classification&language=pt&sort=trending&search=sentiment
+https://huggingface.co/docs/transformers/training
+
+
+31/08/2022 à 01/11/2022
+
+Globo:
+https://g1.globo.com/busca/?q=pol%C3%ADtica&ps=on&order=recent&species=not%C3%ADcias&from=2022-08-31T00%3A00%3A00-0400&to=2022-11-01T23%3A59%3A59-0400&page=40&ajax=1
+
+Folha:
+https://search.folha.uol.com.br/search?q=pol%C3%ADtica&site%5B%5D=online%2Fpaineldoleitor&sd=31%2F08%2F2022&ed=01%2F11%2F2022&periodo=personalizado&sr=1&results_count=653&search_time=1%2C062&url=https%3A%2F%2Fsearch.folha.uol.com.br%2Fsearch%3Fq%3Dpol%25C3%25ADtica%26site%255B%255D%3Donline%252Fpaineldoleitor%26sd%3D31%252F08%252F2022%26ed%3D01%252F11%252F2022%26periodo%3Dpersonalizado%26sr%3D51
+
+CNN Brasil:
+https://www.cnnbrasil.com.br/pagina/559/?s=pol%C3%ADtica&orderby=date&order=desc
+
+Jovem Pan:
+https://jovempan.com.br/noticias/politica/page/348
