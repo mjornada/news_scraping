@@ -7,7 +7,4 @@ import scrapy
 
 
 class FolhaSaoPauloScraperItem(scrapy.Item):
-    title = scrapy.Field()
-    url = scrapy.Field()
-    content = scrapy.Field()
     pass
