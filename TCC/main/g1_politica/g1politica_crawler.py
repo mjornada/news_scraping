@@ -7,7 +7,7 @@ import re
 
 def scraper():
     all_news = []
-    for i in range(1, 3):
+    for i in range(1, 41):
         print(f'Loop {i} is running...')
 
         # url = f'https://g1.globo.com/politica/index/feed/pagina-{i}.ghtml'
@@ -24,7 +24,12 @@ def scraper():
 
         for noticia in noticias:
             # title = noticia.find('img').get('title')
-            title = noticia.find('div', class_='widget--info__title product-color').text.strip()
+            # title = noticia.find('div', class_='widget--info__title product-color').text.strip()
+            try:
+                title = noticia.find('div', class_='widget--info__title product-color').text.strip()
+            except AttributeError:
+                print("Falha ao extrair o título. Pulando para próxima notícia.")
+                continue
             url = unquote(noticia.get('href'))
             pattern = re.compile(r'https://[^\s&"]+\.ghtml')
             match = pattern.search(url)
@@ -50,4 +55,4 @@ if __name__ == '__main__':
     df = df[['Title', 'URL']].dropna()
 
     # Save the DataFrame to a CSV file
-    df.to_csv('output_file.csv', index_label='RowNames', sep=';')
+    df.to_csv('g1_politica.csv', index_label='RowNames', sep=';')
