@@ -15,12 +15,14 @@ https://search.folha.uol.com.br/search?q=pol%C3%ADtica&site%5B%5D=online%2Fpaine
 
 CNN Brasil:
 https://www.cnnbrasil.com.br/pagina/559/?s=pol%C3%ADtica&orderby=date&order=desc
+https://www.cnnbrasil.com.br/politica/ultimas-noticias/pagina/554/
+https://www.cnnbrasil.com.br/cnn-brasil-block-list-ajax?action=cnnbrasilBlockListAjax&nounce=3ad02e4bf4&page=2&perpage=5&limit=10&items=482&type=category&postin=%5B7291504%2C7292665%2C7291327%2C7291371%2C7290688%2C7290379%2C7289971%2C7289834%2C7289735%2C7289606%5D&url=BlockList
 
 Jovem Pan:
-https://jovempan.com.br/noticias/politica/page/348
+https://jovempan.com.br/noticias/politica/page/368
 
 Gazeta do Povo:
-
+https://www.gazetadopovo.com.br/republica/
 
 
 https%3A%2F%2Fg1.globo.com%2Fpolitica%2Feleicoes%2F2022%2Fnoticia%2F2022%2F10%2F30%2Fpresidenciaveis-comentam-eleicao-de-lula-em-segundo-turno.ghtml&amp;syn=False&amp;key=72470a920d3888f7191de8b840e5ab43
