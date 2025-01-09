@@ -3,17 +3,19 @@ import pandas as pd
 from scrapy.spiders import CSVFeedSpider
 from scrapy.exporters import CsvItemExporter
 
-# (.venv) az@AZN1660:~/Repo/news_scraping/TCC/main/g1_politica/g1_politica$
-# scrapy runspider g1_politica/spiders/g1_politica.py -o output.csv --set delimiter=";"
-# /home/az/Repo/news_scraping/TCC/main/g1_politica/spyder/spyder/spiders/g1_politica.py
+
+#  ~/repo/news_scraping/TCC/main/g1_politica
+# scrapy runspider g1_politica/g1_politica/spiders/g1_politica.py -o output.csv --set delimiter=";"
+# /home/az/repo/news_scraping/TCC/main/g1_politica/spyder/spyder/spiders/g1_politica.py
 
 class GUmPoliticaSpider(scrapy.Spider):
     delimiter = ";"
     name = 'g1_politica'
 
-    df = pd.read_csv('/home/az/Repo/TCC/main/g1_politica/g1_politica.csv')
+    df = pd.read_csv('/home/az/repo/news_scraping/TCC/main/g1_politica/g1_politica_pv.csv', sep=';')
+    print(df['URL'])
     links = df['URL'].tolist()
-    print(links[0])
+    print(links[0:3])
     start_urls = links[:3]
     data_list = []
 
@@ -33,7 +35,7 @@ class GUmPoliticaSpider(scrapy.Spider):
         # Print for debugging
         print(context_text_without_tags)
 
-        if context_text_without_tags is '':
+        if context_text_without_tags == '':
             print(f'Eu sou string vazia.')
 
             elementos_B = response.xpath("//main[@id='conteudo']/article[@id='c-news']/div[@class='block'][2]/div[@class='container j-paywall']"
@@ -59,4 +61,4 @@ class GUmPoliticaSpider(scrapy.Spider):
     def closed(self, reason):
         # Convert the list to a DataFrame and save to CSV
         df_output = pd.DataFrame(self.data_list)
-        df_output.to_csv('output_pandas.csv', sep=';', index=False)
+        df_output.to_csv('output_scrapy.csv', sep=';', index=False)

@@ -11,7 +11,7 @@ class FolhaSaoPauloScraperSpider(scrapy.Spider):
     delimiter = ";"
     name = 'folha_sao_paulo'
 
-    df = pd.read_csv('/home/az/Repo/TCC/main/folha_sao_paulo/folha_sao_paulo.csv', sep=';')
+    df = pd.read_csv('/home/az/repo/TCC/main/folha_sao_paulo/folha_sao_paulo.csv', sep=';')
     links = df['URL'].tolist()
     start_urls = links[:653]
     data_list = []
